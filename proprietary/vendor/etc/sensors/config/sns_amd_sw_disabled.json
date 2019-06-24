@@ -1,11 +1,11 @@
 {
   "config": {
-    "hw_platform": [ "MTP", "Dragon", "Surf", "QRD", "HDK"],
-    "soc_id": ["339", "340", "361"]
+    "hw_platform": [ "MTP", "DAVINCI", "Surf", "QRD", "HDK", "AQUILA"],
+    "soc_id": ["339", "340","365"]
   },
   "sns_amd": {
     "owner": "sns_amd",
-    "enabled": {"ver": "0","type": "int", "data": "0"
+    "enabled": {"ver": "2","type": "int", "data": "1"
     }
   }
 }

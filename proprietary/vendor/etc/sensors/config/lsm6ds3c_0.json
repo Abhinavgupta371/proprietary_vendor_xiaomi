@@ -1,15 +1,15 @@
 {
   "config":
   {
-    "hw_platform": ["MTP", "Dragon", "Surf", "IDP"],
-    "soc_id": ["291", "246", "305", "355"]
+    "hw_platform": ["QRD", "MTP", "DAVINCI", "Surf", "HDK", "AQUILA"],
+    "soc_id": ["365", "246", "305", "321", "336", "339", "341", "360"]
   },
   "lsm6ds3c_0":{
-    "owner": "sns_lsm6ds3c",
+    "owner": "lsm6ds3c",
     ".accel":{
-      "owner": "sns_lsm6ds3c",
+      "owner": "lsm6ds3c",
       ".config":{
-        "owner": "sns_lsm6ds3c",
+        "owner": "lsm6ds3c",
         "is_dri":{ "type": "int", "ver": "0",
           "data": "1"
         },
@@ -25,16 +25,16 @@
       }
     },
     ".gyro":{
-      "owner": "sns_lsm6ds3c",
+      "owner": "lsm6ds3c",
       ".config":{
-        "owner": "sns_lsm6ds3c",
+        "owner": "lsm6ds3c",
         "is_dri":{ "type": "int", "ver": "0",
           "data": "1"
         },
         "hw_id":{ "type": "int", "ver": "0",
           "data": "0"
         },
-        "res_idx":{ "type": "int", "ver": "0",
+        "res_idx":{ "type": "int", "ver": "1",
           "data": "3"
         },
         "sync_stream":{ "type": "int", "ver": "0",
@@ -43,9 +43,9 @@
       }
     },
     ".md":{
-      "owner": "sns_lsm6ds3c",
+      "owner": "lsm6ds3c",
       ".config":{
-        "owner": "sns_lsm6ds3c",
+        "owner": "lsm6ds3c",
         "is_dri":{ "type": "int", "ver": "0",
           "data": "1"
         },
@@ -61,9 +61,9 @@
       }
     },
     ".temp":{
-      "owner": "sns_lsm6ds3c",
+      "owner": "lsm6ds3c",
       ".config":{
-        "owner": "sns_lsm6ds3c",
+        "owner": "lsm6ds3c",
         "is_dri":{ "type": "int", "ver": "0",
           "data": "0"
         },

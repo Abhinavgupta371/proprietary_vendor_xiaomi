@@ -1,8 +1,8 @@
 {
   "config":
   {
-    "hw_platform": ["MTP", "Dragon", "Surf", "IDP"],
-    "soc_id": ["355"]
+    "hw_platform": ["MTP", "DAVINCI", "QRD", "HDK", "AQUILA"],
+    "soc_id": ["321", "341", "365"]
   },
   "ak0991x_0_platform":{
     "owner": "sns_ak0991x",
@@ -26,26 +26,41 @@
       "reg_addr_type":{ "type": "int", "ver": "0",
         "data": "0"
       },
+      "dri_irq_num":{ "type": "int", "ver": "0",
+        "data": "119"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "3"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
       "num_rail":{ "type": "int", "ver": "0",
         "data": "1"
       },
       "rail_on_state":{ "type": "int", "ver": "0",
-        "data": "2"
+        "data": "1"
       },
       "vddio_rail":{ "type": "str", "ver": "0",
         "data": "/pmic/client/sensor_vddio"
       },
       "rigid_body_type":{ "type": "int", "ver": "0",
-        "data": "0"
+      "data": "0"
       }
     },
     ".orient":{
       "owner": "sns_ak0991x",
-      "x":{ "type": "str", "ver": "0",
-        "data": "+y"
+      "x":{ "type": "str", "ver": "2",
+        "data": "-y"
       },
-      "y":{ "type": "str", "ver": "0",
-        "data": "-x"
+      "y":{ "type": "str", "ver": "2",
+        "data": "+x"
       },
       "z":{ "type": "str", "ver": "0",
         "data": "+z"
@@ -58,31 +73,31 @@
         ".corr_mat":{
           "owner": "sns_ak0991x",
           "0_0":{ "type": "flt", "ver": "0",
-            "data": "0.98992919921875"
+            "data": "1.0262"
           },
           "0_1":{ "type": "flt", "ver": "0",
-            "data": "0.0006103515625"
+            "data": "0.0451"
           },
           "0_2":{ "type": "flt", "ver": "0",
-            "data": "0.01702880859375"
+            "data": "0.0089"
           },
           "1_0":{ "type": "flt", "ver": "0",
-            "data": "-0.00836181640625"
+            "data": "0.0451"
           },
           "1_1":{ "type": "flt", "ver": "0",
-            "data": "1.011962890625"
+            "data": "1.0414"
           },
           "1_2":{ "type": "flt", "ver": "0",
-            "data": "-0.015869140625"
+            "data": " -0.0118"
           },
           "2_0":{ "type": "flt", "ver": "0",
-            "data": "-0.0001220703125"
+            "data": "0.0089"
           },
           "2_1":{ "type": "flt", "ver": "0",
-            "data": "0.05255126953125"
+            "data": "-0.0118"
           },
           "2_2":{ "type": "flt", "ver": "0",
-            "data": "1.029296875"
+            "data": "0.9324"
           }
         },
         ".bias":{

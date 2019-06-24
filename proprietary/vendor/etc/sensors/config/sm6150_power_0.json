@@ -1,7 +1,7 @@
 {
   "config":{
-    "hw_platform": ["QRD", "MTP", "Dragon", "Surf", "IDP"],
-    "soc_id": ["355"]
+    "hw_platform": ["MTP", "DAVINCI", "Surf", "QRD", "HDK", "AQUILA"],
+    "soc_id": ["365"]
   },
   "power":{
     "owner": "power_manager",
@@ -37,7 +37,7 @@
           "data": "0"
         },
         "sleep_pull":{ "type": "int", "ver": "0",
-          "data": "2"
+          "data": "0"
         },
         "sleep_drive":{ "type": "int", "ver": "0",
           "data": "0"
@@ -67,7 +67,7 @@
           "data": "0"
         },
         "sleep_pull":{ "type": "int", "ver": "0",
-          "data": "2"
+          "data": "0"
         },
         "sleep_drive":{ "type": "int", "ver": "0",
           "data": "0"
@@ -199,28 +199,28 @@
           "data": "6"
         },
         "active_fs":{ "type": "int", "ver": "0",
-          "data": "2"
+          "data": "1"
         },
         "active_dir":{ "type": "int", "ver": "0",
-          "data": "0"
+          "data": "1"
         },
         "active_pull":{ "type": "int", "ver": "0",
           "data": "0"
         },
         "active_drive":{ "type": "int", "ver": "0",
-          "data": "3"
+          "data": "0"
         },
         "sleep_fs":{ "type": "int", "ver": "0",
-          "data": "2"
+          "data": "0"
         },
         "sleep_dir":{ "type": "int", "ver": "0",
           "data": "0"
         },
         "sleep_pull":{ "type": "int", "ver": "0",
-          "data": "2"
+          "data": "0"
         },
         "sleep_drive":{ "type": "int", "ver": "0",
-          "data": "3"
+          "data": "0"
         }
       },
       ".gpio_7":{
@@ -229,66 +229,6 @@
           "data": "7"
         },
         "active_fs":{ "type": "int", "ver": "0",
-          "data": "2"
-        },
-        "active_dir":{ "type": "int", "ver": "0",
-          "data": "0"
-        },
-        "active_pull":{ "type": "int", "ver": "0",
-          "data": "0"
-        },
-        "active_drive":{ "type": "int", "ver": "0",
-          "data": "3"
-        },
-        "sleep_fs":{ "type": "int", "ver": "0",
-          "data": "2"
-        },
-        "sleep_dir":{ "type": "int", "ver": "0",
-          "data": "0"
-        },
-        "sleep_pull":{ "type": "int", "ver": "0",
-          "data": "2"
-        },
-        "sleep_drive":{ "type": "int", "ver": "0",
-          "data": "3"
-        }
-      },
-      ".gpio_8":{
-        "owner": "power_manager",
-        "gpio_num":{ "type": "int", "ver": "0",
-          "data": "8"
-        },
-        "active_fs":{ "type": "int", "ver": "0",
-          "data": "1"
-        },
-        "active_dir":{ "type": "int", "ver": "0",
-          "data": "0"
-        },
-        "active_pull":{ "type": "int", "ver": "0",
-          "data": "0"
-        },
-        "active_drive":{ "type": "int", "ver": "0",
-          "data": "3"
-        },
-        "sleep_fs":{ "type": "int", "ver": "0",
-          "data": "1"
-        },
-        "sleep_dir":{ "type": "int", "ver": "0",
-          "data": "0"
-        },
-        "sleep_pull":{ "type": "int", "ver": "0",
-          "data": "2"
-        },
-        "sleep_drive":{ "type": "int", "ver": "0",
-          "data": "3"
-        }
-      },
-      ".gpio_9":{
-        "owner": "power_manager",
-        "gpio_num":{ "type": "int", "ver": "0",
-          "data": "9"
-        },
-        "active_fs":{ "type": "int", "ver": "0",
           "data": "1"
         },
         "active_dir":{ "type": "int", "ver": "0",
@@ -298,79 +238,49 @@
           "data": "0"
         },
         "active_drive":{ "type": "int", "ver": "0",
-          "data": "3"
+          "data": "0"
         },
         "sleep_fs":{ "type": "int", "ver": "0",
-          "data": "1"
+          "data": "0"
         },
         "sleep_dir":{ "type": "int", "ver": "0",
           "data": "0"
         },
         "sleep_pull":{ "type": "int", "ver": "0",
-          "data": "2"
-        },
-        "sleep_drive":{ "type": "int", "ver": "0",
-          "data": "3"
-        }
-      },
-      ".gpio_10":{
-        "owner": "power_manager",
-        "gpio_num":{ "type": "int", "ver": "0",
-          "data": "10"
-        },
-        "active_fs":{ "type": "int", "ver": "0",
-          "data": "1"
-        },
-        "active_dir":{ "type": "int", "ver": "0",
-          "data": "1"
-        },
-        "active_pull":{ "type": "int", "ver": "0",
           "data": "0"
         },
-        "active_drive":{ "type": "int", "ver": "0",
-          "data": "3"
-        },
-        "sleep_fs":{ "type": "int", "ver": "0",
-          "data": "1"
-        },
-        "sleep_dir":{ "type": "int", "ver": "0",
-          "data": "0"
-        },
-        "sleep_pull":{ "type": "int", "ver": "0",
-          "data": "2"
-        },
         "sleep_drive":{ "type": "int", "ver": "0",
-          "data": "3"
+          "data": "0"
         }
       },
       ".gpio_11":{
         "owner": "power_manager",
-        "gpio_num":{ "type": "int", "ver": "0",
+        "gpio_num":{ "type": "int", "ver": "2",
           "data": "11"
         },
-        "active_fs":{ "type": "int", "ver": "0",
+        "active_fs":{ "type": "int", "ver": "2",
           "data": "1"
         },
-        "active_dir":{ "type": "int", "ver": "0",
+        "active_dir":{ "type": "int", "ver": "2",
           "data": "1"
         },
-        "active_pull":{ "type": "int", "ver": "0",
+        "active_pull":{ "type": "int", "ver": "2",
           "data": "0"
         },
-        "active_drive":{ "type": "int", "ver": "0",
+        "active_drive":{ "type": "int", "ver": "2",
           "data": "3"
         },
-        "sleep_fs":{ "type": "int", "ver": "0",
-          "data": "1"
-        },
-        "sleep_dir":{ "type": "int", "ver": "0",
+        "sleep_fs":{ "type": "int", "ver": "2",
           "data": "0"
         },
-        "sleep_pull":{ "type": "int", "ver": "0",
+        "sleep_dir":{ "type": "int", "ver": "2",
+          "data": "0"
+        },
+        "sleep_pull":{ "type": "int", "ver": "2",
           "data": "2"
         },
-        "sleep_drive":{ "type": "int", "ver": "0",
-          "data": "3"
+        "sleep_drive":{ "type": "int", "ver": "2",
+          "data": "0"
         }
       },
       ".gpio_12":{
@@ -407,126 +317,6 @@
         "owner": "power_manager",
         "gpio_num":{ "type": "int", "ver": "0",
           "data": "13"
-        },
-        "active_fs":{ "type": "int", "ver": "0",
-          "data": "1"
-        },
-        "active_dir":{ "type": "int", "ver": "0",
-          "data": "0"
-        },
-        "active_pull":{ "type": "int", "ver": "0",
-          "data": "0"
-        },
-        "active_drive":{ "type": "int", "ver": "0",
-          "data": "3"
-        },
-        "sleep_fs":{ "type": "int", "ver": "0",
-          "data": "1"
-        },
-        "sleep_dir":{ "type": "int", "ver": "0",
-          "data": "0"
-        },
-        "sleep_pull":{ "type": "int", "ver": "0",
-          "data": "2"
-        },
-        "sleep_drive":{ "type": "int", "ver": "0",
-          "data": "3"
-        }
-      },
-      ".gpio_14":{
-        "owner": "power_manager",
-        "gpio_num":{ "type": "int", "ver": "0",
-          "data": "14"
-        },
-        "active_fs":{ "type": "int", "ver": "0",
-          "data": "1"
-        },
-        "active_dir":{ "type": "int", "ver": "0",
-          "data": "1"
-        },
-        "active_pull":{ "type": "int", "ver": "0",
-          "data": "0"
-        },
-        "active_drive":{ "type": "int", "ver": "0",
-          "data": "3"
-        },
-        "sleep_fs":{ "type": "int", "ver": "0",
-          "data": "1"
-        },
-        "sleep_dir":{ "type": "int", "ver": "0",
-          "data": "0"
-        },
-        "sleep_pull":{ "type": "int", "ver": "0",
-          "data": "2"
-        },
-        "sleep_drive":{ "type": "int", "ver": "0",
-          "data": "3"
-        }
-      },
-      ".gpio_15":{
-        "owner": "power_manager",
-        "gpio_num":{ "type": "int", "ver": "0",
-          "data": "15"
-        },
-        "active_fs":{ "type": "int", "ver": "0",
-          "data": "1"
-        },
-        "active_dir":{ "type": "int", "ver": "0",
-          "data": "0"
-        },
-        "active_pull":{ "type": "int", "ver": "0",
-          "data": "0"
-        },
-        "active_drive":{ "type": "int", "ver": "0",
-          "data": "3"
-        },
-        "sleep_fs":{ "type": "int", "ver": "0",
-          "data": "1"
-        },
-        "sleep_dir":{ "type": "int", "ver": "0",
-          "data": "0"
-        },
-        "sleep_pull":{ "type": "int", "ver": "0",
-          "data": "2"
-        },
-        "sleep_drive":{ "type": "int", "ver": "0",
-          "data": "3"
-        }
-      },
-      ".gpio_16":{
-        "owner": "power_manager",
-        "gpio_num":{ "type": "int", "ver": "0",
-          "data": "16"
-        },
-        "active_fs":{ "type": "int", "ver": "0",
-          "data": "1"
-        },
-        "active_dir":{ "type": "int", "ver": "0",
-          "data": "1"
-        },
-        "active_pull":{ "type": "int", "ver": "0",
-          "data": "0"
-        },
-        "active_drive":{ "type": "int", "ver": "0",
-          "data": "3"
-        },
-        "sleep_fs":{ "type": "int", "ver": "0",
-          "data": "1"
-        },
-        "sleep_dir":{ "type": "int", "ver": "0",
-          "data": "0"
-        },
-        "sleep_pull":{ "type": "int", "ver": "0",
-          "data": "2"
-        },
-        "sleep_drive":{ "type": "int", "ver": "0",
-          "data": "3"
-        }
-      },
-      ".gpio_17":{
-        "owner": "power_manager",
-        "gpio_num":{ "type": "int", "ver": "0",
-          "data": "17"
         },
         "active_fs":{ "type": "int", "ver": "0",
           "data": "1"

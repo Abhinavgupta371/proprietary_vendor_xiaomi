@@ -1,15 +1,15 @@
 {
   "config":
   {
-    "hw_platform": ["QRD", "MTP", "Dragon", "Surf", "HDK"],
-    "soc_id": ["291", "246", "305", "321", "336", "339", "341", "360", "361", "393"]
+    "hw_platform": ["MTP", "DAVINCI", "Surf", "POLARIS", "PERSEUS", "AQUILA"],
+    "soc_id": ["291", "246", "305", "321", "365"]
   },
-  "shtw2_0":{
-    "owner": "sns_shtw2",
-    ".ambient_temperature":{
-      "owner": "sns_shtw2",
+  "tcs3701":{
+    "owner": "sns_tcs3701",
+    ".als":{
+      "owner": "sns_tcs3701",
       ".config":{
-        "owner": "sns_shtw2",
+        "owner": "sns_tcs3701",
         "is_dri":{ "type": "int", "ver": "0",
           "data": "0"
         },
@@ -24,14 +24,17 @@
         }
       }
     },
-    ".humidity":{
-      "owner": "sns_shtw2",
+    ".prox":{
+      "owner": "sns_tcs3701",
       ".config":{
-        "owner": "sns_shtw2",
+        "owner": "sns_tcs3701",
         "is_dri":{ "type": "int", "ver": "0",
-          "data": "0"
+          "data": "1"
         },
         "hw_id":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
           "data": "0"
         },
         "sync_stream":{ "type": "int", "ver": "0",
