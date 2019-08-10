@@ -18,6 +18,7 @@
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/xiaomi/violet/proprietary/bin/wfdservice:system/bin/wfdservice \
+    vendor/xiaomi/violet/proprietary/etc/display/SVIConfig.xml:system/etc/display/SVIConfig.xml \
     vendor/xiaomi/violet/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
     vendor/xiaomi/violet/proprietary/etc/init/dpmd.rc:system/etc/init/dpmd.rc \
     vendor/xiaomi/violet/proprietary/etc/init/wfdservice.rc:system/etc/init/wfdservice.rc \
