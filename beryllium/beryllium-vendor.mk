@@ -391,5 +391,5 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.fm@1.0 \
     HotwordEnrollmentOKGoogleWCD9340 \
-    HotwordEnrollmentXGoogleWCD9340 \
-    com.qualcomm.location
+    HotwordEnrollmentXGoogleWCD9340
+#    com.qualcomm.location
