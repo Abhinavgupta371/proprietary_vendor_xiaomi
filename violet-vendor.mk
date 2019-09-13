@@ -106,8 +106,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/lib64/lib-imsvtextutils.so:system/lib64/lib-imsvtextutils.so \
     vendor/xiaomi/violet/proprietary/lib64/lib-imsvtutils.so:system/lib64/lib-imsvtutils.so \
     vendor/xiaomi/violet/proprietary/lib64/libFileMux.so:system/lib64/libFileMux.so \
-    vendor/xiaomi/violet/proprietary/lib64/libaptXHD_encoder.so:system/lib64/libaptXHD_encoder.so \
-    vendor/xiaomi/violet/proprietary/lib64/libaptX_encoder.so:system/lib64/libaptX_encoder.so \
     vendor/xiaomi/violet/proprietary/lib64/libfm-hci.so:system/lib64/libfm-hci.so \
     vendor/xiaomi/violet/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/xiaomi/violet/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
@@ -128,6 +126,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/lib64/vendor.qti.hardware.data.latency@1.0.so:system/lib64/vendor.qti.hardware.data.latency@1.0.so \
     vendor/xiaomi/violet/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/lib64/vendor.qti.imsrtpservice@1.0.so \
     vendor/xiaomi/violet/proprietary/lib64/vendor.qti.latency@2.0.so:system/lib64/vendor.qti.latency@2.0.so \
+    vendor/xiaomi/violet/proprietary/product/lib64/libaptXHD_encoder.so:system/product/lib64/libaptXHD_encoder.so \
+    vendor/xiaomi/violet/proprietary/product/lib64/libaptX_encoder.so:system/product/lib64/libaptX_encoder.so \
     vendor/xiaomi/violet/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/xiaomi/violet/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
     vendor/xiaomi/violet/proprietary/vendor/bin/cdsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/cdsprpcd \
@@ -1218,7 +1218,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/vendor/radio/qcril_database/upgrade/2_version_add_wps_config.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/2_version_add_wps_config.sql \
     vendor/xiaomi/violet/proprietary/vendor/radio/qcril_database/upgrade/3_version_update_wps_config.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/3_version_update_wps_config.sql \
     vendor/xiaomi/violet/proprietary/vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/4_version_update_ecc_table.sql
-
 
 PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/violet
