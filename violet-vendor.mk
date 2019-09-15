@@ -1234,6 +1234,7 @@ PRODUCT_PACKAGES += \
     datastatusnotification \
     embms \
     imssettings \
+    uceShimService \
     CNEService \
     WfdService \
     com.qualcomm.location \
