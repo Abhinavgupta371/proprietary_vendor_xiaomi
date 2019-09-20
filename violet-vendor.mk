@@ -58,6 +58,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
     vendor/xiaomi/violet/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
     vendor/xiaomi/violet/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
+    vendor/xiaomi/violet/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/xiaomi/violet/proprietary/framework/vendor.qti.data.factory-V1.0-java.jar:system/framework/vendor.qti.data.factory-V1.0-java.jar \
     vendor/xiaomi/violet/proprietary/framework/vendor.qti.data.factory-V1.1-java.jar:system/framework/vendor.qti.data.factory-V1.1-java.jar \
     vendor/xiaomi/violet/proprietary/framework/vendor.qti.hardware.alarm-V1.0-java.jar:system/framework/vendor.qti.hardware.alarm-V1.0-java.jar \
@@ -106,6 +107,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/lib64/lib-imsvtextutils.so:system/lib64/lib-imsvtextutils.so \
     vendor/xiaomi/violet/proprietary/lib64/lib-imsvtutils.so:system/lib64/lib-imsvtutils.so \
     vendor/xiaomi/violet/proprietary/lib64/libFileMux.so:system/lib64/libFileMux.so \
+    vendor/xiaomi/violet/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so \
     vendor/xiaomi/violet/proprietary/lib64/libfm-hci.so:system/lib64/libfm-hci.so \
     vendor/xiaomi/violet/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/xiaomi/violet/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
@@ -126,8 +128,20 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/lib64/vendor.qti.hardware.data.latency@1.0.so:system/lib64/vendor.qti.hardware.data.latency@1.0.so \
     vendor/xiaomi/violet/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/lib64/vendor.qti.imsrtpservice@1.0.so \
     vendor/xiaomi/violet/proprietary/lib64/vendor.qti.latency@2.0.so:system/lib64/vendor.qti.latency@2.0.so \
-    vendor/xiaomi/violet/proprietary/product/lib64/libaptXHD_encoder.so:system/product/lib64/libaptXHD_encoder.so \
-    vendor/xiaomi/violet/proprietary/product/lib64/libaptX_encoder.so:system/product/lib64/libaptX_encoder.so \
+    vendor/xiaomi/violet/proprietary/product/bin/dpmd:$(TARGET_COPY_OUT_PRODUCT)/bin/dpmd \
+    vendor/xiaomi/violet/proprietary/product/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/dpm/dpm.conf \
+    vendor/xiaomi/violet/proprietary/product/etc/init/dpmd.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/dpmd.rc \
+    vendor/xiaomi/violet/proprietary/product/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qti.dpmframework.xml \
+    vendor/xiaomi/violet/proprietary/product/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/dpmapi.xml \
+    vendor/xiaomi/violet/proprietary/product/framework/com.qti.dpmframework.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/com.qti.dpmframework.jar \
+    vendor/xiaomi/violet/proprietary/product/framework/dpmapi.jar:$(TARGET_COPY_OUT_PRODUCT)/framework/dpmapi.jar \
+    vendor/xiaomi/violet/proprietary/product/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
+    vendor/xiaomi/violet/proprietary/product/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptXHD_encoder.so \
+    vendor/xiaomi/violet/proprietary/product/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptX_encoder.so \
+    vendor/xiaomi/violet/proprietary/product/lib64/libdpmctmgr.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libdpmctmgr.so \
+    vendor/xiaomi/violet/proprietary/product/lib64/libdpmfdmgr.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libdpmfdmgr.so \
+    vendor/xiaomi/violet/proprietary/product/lib64/libdpmframework.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libdpmframework.so \
+    vendor/xiaomi/violet/proprietary/product/lib64/libdpmtcm.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libdpmtcm.so \
     vendor/xiaomi/violet/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/xiaomi/violet/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
     vendor/xiaomi/violet/proprietary/vendor/bin/cdsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/cdsprpcd \
@@ -236,6 +250,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-service-qti.rc \
     vendor/xiaomi/violet/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.1-service-qti.rc \
     vendor/xiaomi/violet/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
+    vendor/xiaomi/violet/proprietary/vendor/etc/init/dpmQmiMgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dpmQmiMgr.rc \
     vendor/xiaomi/violet/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
     vendor/xiaomi/violet/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/xiaomi/violet/proprietary/vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.esepowermanager@1.0-service.rc \
@@ -970,6 +985,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libbccQTI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbccQTI.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libc++_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++_shared.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc2d30_bltlib.so \
+    vendor/xiaomi/violet/proprietary/vendor/lib64/libcam.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_nn_stub.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libcamera_scene.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_scene.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libcamxfdalgov7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdalgov7.so \
@@ -978,7 +994,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libcamxstatscore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxstatscore.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libcamxswprocessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxswprocessalgo.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libcamxtintlessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxtintlessalgo.so \
-    vendor/xiaomi/violet/proprietary/vendor/lib64/libcam.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsp_default_listener.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsprpc.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libcne.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcne.so \
@@ -1218,6 +1233,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/vendor/radio/qcril_database/upgrade/2_version_add_wps_config.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/2_version_add_wps_config.sql \
     vendor/xiaomi/violet/proprietary/vendor/radio/qcril_database/upgrade/3_version_update_wps_config.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/3_version_update_wps_config.sql \
     vendor/xiaomi/violet/proprietary/vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/4_version_update_ecc_table.sql
+
 
 PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/violet
