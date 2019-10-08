@@ -65,6 +65,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/lib64/libwfdconfigutils.so:system/lib64/libwfdconfigutils.so \
     vendor/xiaomi/violet/proprietary/lib64/libwfdmminterface.so:system/lib64/libwfdmminterface.so \
     vendor/xiaomi/violet/proprietary/lib64/libwfdmmsink.so:system/lib64/libwfdmmsink.so \
+    vendor/xiaomi/violet/proprietary/lib64/libwfdnative.so:system/lib64/libwfdnative.so \
     vendor/xiaomi/violet/proprietary/lib64/libwfdrtsp.so:system/lib64/libwfdrtsp.so \
     vendor/xiaomi/violet/proprietary/lib64/libwfds.so:system/lib64/libwfds.so \
     vendor/xiaomi/violet/proprietary/lib64/libwfdsinksm.so:system/lib64/libwfdsinksm.so \
