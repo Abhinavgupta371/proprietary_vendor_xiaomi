@@ -1283,7 +1283,9 @@ PRODUCT_PACKAGES += \
     libthermalclient \
     SoterService \
     WfdService \
+    CneApp \
     FingerprintExtensionService \
+    IWlanService \
     TimeService \
     PowerOffAlarm \
     QtiTelephonyService \
