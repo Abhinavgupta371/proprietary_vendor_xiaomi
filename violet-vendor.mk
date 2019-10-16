@@ -278,6 +278,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/xiaomi/violet/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
     vendor/xiaomi/violet/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
+    vendor/xiaomi/violet/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
     vendor/xiaomi/violet/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/xiaomi/violet/proprietary/vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.esepowermanager@1.0-service.rc \
     vendor/xiaomi/violet/proprietary/vendor/etc/init/vendor.qti.gnss@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.gnss@2.1-service.rc \
@@ -544,6 +545,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/vendor/lib/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQSEEComAPI.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libQTEEConnector_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQTEEConnector_vendor.so \
+    vendor/xiaomi/violet/proprietary/vendor/lib/libRSDriver_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/libRSDriver_adreno.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSecureUILib.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libStDrvInt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libStDrvInt.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdb-fts.so \
@@ -560,6 +562,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/vendor/lib/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioalsa.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioparsers.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libbase64.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbase64.so \
+    vendor/xiaomi/violet/proprietary/vendor/lib/libbccQTI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbccQTI.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30_bltlib.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera_nn_stub.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libcamxfdalgov7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxfdalgov7.so \
@@ -570,7 +573,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/vendor/lib/libcamxtintlessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxtintlessalgo.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsp_default_listener.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsprpc.so \
-    vendor/xiaomi/violet/proprietary/vendor/lib/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libconfigdb.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libcpion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcpion.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisp-aba.so \
@@ -602,7 +604,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/vendor/lib/liblistensoundmodel2.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblistensoundmodel2.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libllvm-glnext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-glnext.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-qcom.so \
-    vendor/xiaomi/violet/proprietary/vendor/lib/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblqe.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdsprpc.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libmialgo_fs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmialgo_fs.so \
@@ -613,19 +614,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/vendor/lib/libmmparser_lite_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmparser_lite_proprietary.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libmmrtpdecoder_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmrtpdecoder_proprietary.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libmmrtpencoder_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmrtpencoder_proprietary.so \
-    vendor/xiaomi/violet/proprietary/vendor/lib/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr.so \
-    vendor/xiaomi/violet/proprietary/vendor/lib/libnetmgr_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr_common.so \
-    vendor/xiaomi/violet/proprietary/vendor/lib/libnetmgr_nr_fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr_nr_fusion.so \
-    vendor/xiaomi/violet/proprietary/vendor/lib/libnetmgr_rmnet_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr_rmnet_ext.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcrypto.so \
-    vendor/xiaomi/violet/proprietary/vendor/lib/libops.so:$(TARGET_COPY_OUT_VENDOR)/lib/libops.so \
-    vendor/xiaomi/violet/proprietary/vendor/lib/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpdmapper.so \
-    vendor/xiaomi/violet/proprietary/vendor/lib/libpdnotifier.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpdnotifier.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libperfconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfconfig.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfgluelayer.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperipheral_client.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcci_legacy.so \
-    vendor/xiaomi/violet/proprietary/vendor/lib/libqcrilFramework.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcrilFramework.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libqdMetaData.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdMetaData.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdi.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdp.so \
@@ -638,9 +631,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/vendor/lib/libqmi_csi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csi.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_encdec.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmiservices.so \
-    vendor/xiaomi/violet/proprietary/vendor/lib/libqrtr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqrtr.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libqseed3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqseed3.so \
-    vendor/xiaomi/violet/proprietary/vendor/lib/libqsocket.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqsocket.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libqti-iopd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-iopd-client.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libqti-iopd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-iopd.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-perfd-client.so \
@@ -649,11 +640,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/vendor/lib/libqti-utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-utils.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtigef.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libqtikeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtikeymaster4.so \
-    vendor/xiaomi/violet/proprietary/vendor/lib/libril-qc-ltedirectdisc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qc-ltedirectdisc.so \
-    vendor/xiaomi/violet/proprietary/vendor/lib/libril-qc-radioconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qc-radioconfig.so \
-    vendor/xiaomi/violet/proprietary/vendor/lib/libril-qcril-hook-oem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qcril-hook-oem.so \
-    vendor/xiaomi/violet/proprietary/vendor/lib/librilqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/librilqmiservices.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib/librpmb.so \
+    vendor/xiaomi/violet/proprietary/vendor/lib/librs_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno.so \
+    vendor/xiaomi/violet/proprietary/vendor/lib/librs_adreno_sha1.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno_sha1.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libscveBlobDescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveBlobDescriptor.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libscveBlobDescriptor_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveBlobDescriptor_stub.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libscveCommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveCommon.so \
@@ -666,7 +655,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/vendor/lib/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker_stub.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libscvePanorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscvePanorama.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libscvePanorama_lite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscvePanorama_lite.so \
-    vendor/xiaomi/violet/proprietary/vendor/lib/libscveScan3D.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveScan3D.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdedrm.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-color.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libsdm-colormgr-algo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-colormgr-algo.so \
@@ -679,24 +667,20 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/vendor/lib/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecureui_svcsock.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libsensorcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorcal.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorslog.so \
-    vendor/xiaomi/violet/proprietary/vendor/lib/libsettings.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsettings.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libsns_device_mode_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_device_mode_stub.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libsns_fastRPC_util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_fastRPC_util.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libsns_low_lat_stream_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_low_lat_stream_stub.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libsnsapi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnsapi.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libsnsdiaglog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnsdiaglog.so \
-    vendor/xiaomi/violet/proprietary/vendor/lib/libspl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspl.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssc.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssd.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libsurround_3mic_proc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsurround_3mic_proc.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswregistrationalgo.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswvdec.so \
-    vendor/xiaomi/violet/proprietary/vendor/lib/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsystem_health_mon.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libthermalfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalfeature.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtime_genoff.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libtinycompress_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinycompress_vendor.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2_1.so \
-    vendor/xiaomi/violet/proprietary/vendor/lib/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtzdrmgenprov.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libvppclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvppclient.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpphvx.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpplibrary.so \
@@ -721,9 +705,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/vendor/lib/libwfduibcsinkinterface_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcsinkinterface_proprietary.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libwfduibcsrc_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcsrc_proprietary.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/libwfduibcsrcinterface_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcsrcinterface_proprietary.so \
-    vendor/xiaomi/violet/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
-    vendor/xiaomi/violet/proprietary/vendor/lib/qcrild_librilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcrild_librilutils.so \
-    vendor/xiaomi/violet/proprietary/vendor/lib/qtimutex.so:$(TARGET_COPY_OUT_VENDOR)/lib/qtimutex.so \
+    vendor/xiaomi/violet/proprietary/vendor/lib/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvhidl.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_Classic.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_HD.so \
     vendor/xiaomi/violet/proprietary/vendor/lib/rfsa/adsp/dirac_resource.dar:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/dirac_resource.dar \
@@ -1005,6 +987,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQSEEComAPI.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libQTEEConnector_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQTEEConnector_vendor.so \
+    vendor/xiaomi/violet/proprietary/vendor/lib64/libRSDriver_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libRSDriver_adreno.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libSNPE.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSNPE.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSecureUILib.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libStDrvInt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libStDrvInt.so \
@@ -1031,6 +1014,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioalsa.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioparsers.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libbase64.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbase64.so \
+    vendor/xiaomi/violet/proprietary/vendor/lib64/libbccQTI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbccQTI.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libc++_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++_shared.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc2d30_bltlib.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libcam.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.so \
@@ -1125,7 +1109,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libnetmgr_rmnet_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_rmnet_ext.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libnlnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnlnetmgr.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemcrypto.so \
-    vendor/xiaomi/violet/proprietary/vendor/lib64/libops.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libops.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdmapper.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libpdnotifier.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdnotifier.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libperfconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfconfig.so \
@@ -1135,6 +1118,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcci_legacy.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcmaputils.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libqcrilFramework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrilFramework.so \
+    vendor/xiaomi/violet/proprietary/vendor/lib64/libqcrildatactl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrildatactl.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libqdMetaData.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdMetaData.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdi.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libqdma_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdma_file_agent.so \
@@ -1167,6 +1151,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libril-qcril-hook-oem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qcril-hook-oem.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/librilqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librilqmiservices.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librpmb.so \
+    vendor/xiaomi/violet/proprietary/vendor/lib64/librs_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librs_adreno.so \
+    vendor/xiaomi/violet/proprietary/vendor/lib64/librs_adreno_sha1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librs_adreno_sha1.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libscveBlobDescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveBlobDescriptor.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libscveBlobDescriptor_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveBlobDescriptor_stub.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libscveCommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveCommon.so \
@@ -1179,7 +1165,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker_stub.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libscvePanorama.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscvePanorama.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libscvePanorama_lite.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscvePanorama_lite.so \
-    vendor/xiaomi/violet/proprietary/vendor/lib64/libscveScan3D.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveScan3D.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdedrm.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-color.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libsdm-colormgr-algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-colormgr-algo.so \
@@ -1199,7 +1184,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libsns_low_lat_stream_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_low_lat_stream_stub.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libsnsapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsapi.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libsnsdiaglog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsdiaglog.so \
-    vendor/xiaomi/violet/proprietary/vendor/lib64/libspl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspl.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssd.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswregistrationalgo.so \
@@ -1211,7 +1195,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtime_genoff.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libtinycompress_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinycompress_vendor.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2_1.so \
-    vendor/xiaomi/violet/proprietary/vendor/lib64/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtzdrmgenprov.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libvendor.goodix.hardware.interfaces.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvendor.goodix.hardware.interfaces.biometrics.fingerprint@2.1.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libvidhance.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libvppclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvppclient.so \
@@ -1220,10 +1203,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libvpptestutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpptestutils.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwms.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libwqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwqe.so \
-    vendor/xiaomi/violet/proprietary/vendor/lib64/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvhidl.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxml.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/libxtadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxtadapter.so \
-    vendor/xiaomi/violet/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libwvdrmengine.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/mibokeh_660_opencl.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/mibokeh_660_opencl.bin \
     vendor/xiaomi/violet/proprietary/vendor/lib64/qcrild_librilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrild_librilutils.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/qtibus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtibus.so \
@@ -1274,6 +1255,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.ims@1.3.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.ims@1.4.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.ims@1.5.so \
+    vendor/xiaomi/violet/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims@1.6.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.ims@1.6.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/vendor.qti.hardware.radio.lpa@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.lpa@1.0.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so \
     vendor/xiaomi/violet/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so \
@@ -1306,7 +1288,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/violet/proprietary/vendor/radio/qcril_database/upgrade/1_version_intro.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/1_version_intro.sql \
     vendor/xiaomi/violet/proprietary/vendor/radio/qcril_database/upgrade/2_version_add_wps_config.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/2_version_add_wps_config.sql \
     vendor/xiaomi/violet/proprietary/vendor/radio/qcril_database/upgrade/3_version_update_wps_config.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/3_version_update_wps_config.sql \
-    vendor/xiaomi/violet/proprietary/vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/4_version_update_ecc_table.sql
+    vendor/xiaomi/violet/proprietary/vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/4_version_update_ecc_table.sql \
+    vendor/xiaomi/violet/proprietary/vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 
 PRODUCT_PACKAGES += \
     libantradio \
